@@ -9,9 +9,17 @@ final noteList = <Note>[];
 class Criteria {
   String title;
   String description;
-
   Criteria(this.title, this.description);
 }
+
+List<Criteria> criteria = [
+  Criteria("What is Flutter?",
+      "Flutter is an open-source UI framework for creating native mobile applications. It allows developers to build mobile applications a single codebase."),
+  Criteria("Stateful Widgets",
+      "The widgets whose state can be altered once they are built are called stateful Widgets. "),
+  Criteria("Conditional",
+      "The conditional (ternary) operator in Dart takes three operands: a condition, first expression (if truthy) and second expression (if falsy)."),
+];
 
 //? Here are some sample data that you can copy-paste in order to create the mock database
 //? --------------------------------------------------------------------------------------
@@ -26,4 +34,5 @@ The widgets whose state can be altered once they are built are called stateful W
 Conditional (ternary) operator
 The conditional (ternary) operator in Dart takes three operands: a condition, first expression (if truthy) and second expression (if falsy).
 */
+
 
