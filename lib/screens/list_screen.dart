@@ -4,8 +4,9 @@
 
 import 'package:flutter/material.dart';
 
-// import 'note_screen.dart';
-// import '../models/note.dart';
+import 'note_screen.dart';
+import '../models/mock_data.dart';
+import '../models/note.dart';
 
 class ListScreen extends StatefulWidget {
   @override
@@ -32,11 +33,13 @@ class _ListScreenState extends State<ListScreen> {
         ],
       ),
       body: ListView.separated(
-        itemCount: 4,
+        itemCount: 3,
         separatorBuilder: (context, index) => Divider(
           color: Colors.blueGrey,
         ),
         itemBuilder: (context, index) => ListTile(
+          title: Text(criteria[index].title),
+          subtitle: Text(criteria[index].description),
           trailing: SizedBox(
             width: 110.0,
             child: Row(
