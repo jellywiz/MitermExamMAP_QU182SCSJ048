@@ -59,8 +59,6 @@ class _ListScreenState extends State<ListScreen> {
               ],
             ),
           ),
-          title: Text('Note title'),
-          subtitle: Text('Note content'),
           onTap: () {},
           onLongPress: () {},
         ),
